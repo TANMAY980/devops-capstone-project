@@ -19,9 +19,13 @@ def health():
     return jsonify(dict(status="OK")), status.HTTP_200_OK
 
 BASE_URL = "/accounts"
+
+
 ######################################################################
 # GET INDEX
 ######################################################################
+
+
 @app.route("/")
 def index():
     """Root URL response"""
@@ -57,9 +61,12 @@ def create_accounts():
         jsonify(message), status.HTTP_201_CREATED, {"Location": location_url}
     )
 
+
 ######################################################################
 # LIST ALL ACCOUNTS
 ######################################################################
+
+
 @app.route("/accounts", methods=["GET"])
 def list_accounts():
     """
