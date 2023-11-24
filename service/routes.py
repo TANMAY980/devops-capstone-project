@@ -18,6 +18,7 @@ def health():
     """Health Status"""
     return jsonify(dict(status="OK")), status.HTTP_200_OK
 
+
 BASE_URL = "/accounts"
 
 
@@ -158,6 +159,8 @@ def check_content_type(media_type):
         status.HTTP_415_UNSUPPORTED_MEDIA_TYPE,
         f"Content-Type must be {media_type}",
     )
+
+
 def test_get_account_not_found(self):
     """It should not Read an Account that is not found"""
     resp = self.client.get(f"{BASE_URL}/0")
