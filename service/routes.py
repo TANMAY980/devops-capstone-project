@@ -18,7 +18,7 @@ def health():
     """Health Status"""
     return jsonify(dict(status="OK")), status.HTTP_200_OK
 
-
+BASE_URL = "/accounts"
 ######################################################################
 # GET INDEX
 ######################################################################
