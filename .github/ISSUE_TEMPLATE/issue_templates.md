@@ -1,11 +1,4 @@
----
-name: ISSUE_TEMPLATES
-about: This folder will contain your new user story template
-title: ''
-labels: ''
-assignees: ''
 
----
 
 **As a** [role]  
 **I need** [function]  
